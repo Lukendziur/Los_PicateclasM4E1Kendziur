@@ -23,28 +23,34 @@ main{
 }
 
 .buscador input[type=text] {
-    float: center;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
+    padding: 5px;    
     font-size: 15px;
-    border: 1px solid black;
+    border: 1px solid gray;
     text-align: center;
-    
+    margin: 50px;
+    margin-right: 0%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+   
 }
 .buscador button[type=submit]{
-    font-size: 20px;
-    border: 1px solid black;
+    padding: 1px;
+    font-size: 21px;
+    border: 1px solid gray;
+    box-sizing: border-box;
 }
-
 
 .alinear-centro{
     text-align: center;
 }
 
 p {
-    font-size: 12px;
-    
+    font-size: 12px;    
+}
+
+ul{
+    padding:0%;
 }
 
 .burger-menu{
