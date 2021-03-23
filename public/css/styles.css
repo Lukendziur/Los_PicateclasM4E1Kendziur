@@ -1,116 +1,170 @@
-* {
+*{
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+    padding: 0px;
 }
 
 body {
-        font-family: Roboto;
-        background-color: #ebebeb;
-        background-position: center;
-        background-size: cover;
-        padding: 10;
-        margin: auto;
+        background-color: #ebebeb;        
 }
-
-header{
-     background-color: #EAC926;
-     background-size: cover;
-     background-position: center;
-     font-size: 12px;
-     padding: 15px 10px 10px 15px;
-}
-
-.buscador{
-    padding: 10px 10px 0px 10px;
-    text-align: left;
-}
-.buscador input[type=text] {
-    padding: 5px;    
-    font-size: 15px;
-    border: 1px solid gray;
-    text-align: center;
-}
-.buscador button[type=submit]{
-    padding: 1px;
-    font-size: 20px;
-    border: 1px solid gray;
+    h3{
+        font-size: 24px;
+    }
     
-}
+    header{
+        background-color: #EAC926;    
+    }
 
-.alinear-centro{
-    text-align: center;
-}
+    div.contenedorLogo-cuotas-buscador{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2%;
+        
+        
+    }
+    div.logoML img{
+        width: 200px;
+        
+    }
+    div.buscador{
+        display: flex;
+        
+        
+    }
 
-p {
-    font-size: 12px;    
-}
-
-.navbar{
-    display: none;
-}
-ul{
-    padding:0%;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.contenedorBurger{
-    padding: 20px 10px 20px 10px;
-    text-align: center;
     
-}
-.burger-menu{
-    color: white;
-    background-color:#1259c3;
-    padding: 9px 10px;
-    border-radius: 3px;
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 15px;
+    header div.logoML, header div.buscador{
+        padding: 2px;        
+    }
+
+    header nav{
+       margin-left: 20px;
+       margin-right: 20px;
+       display: none;
+       padding: 10px;
+        
+    }
+
+    header ul li{
+        list-style: none;
+    }
+
+    header ul li a{
+        text-decoration: none;
+        color: #000;
+        display: inline-block;
+        
+    }
+
+    header .buscador .text{
+        background-color: #FFF;
+        border: 1px solid #000;
+        outline: none;
+        color: #666;
+        padding: 2px;
+    }
+
+    header .buscador .submit{
+        background-color: #FFF;
+        border: 1px solid #000;
+        color: #666;
+        width: 10%;
+    }
+
+    div.burger-menu{
+        text-align: center;
+        
+    }
+
+    .burger-menu i{
+        background-color: #0044AA;
+        border-radius: 5px;
+        color: #FFF;
+        font-size: 20px;
+        height: 40px;
+        margin: 10px 0px 20px 0px;
+        padding: 10px;
+        width: 40px;
+    }
+
+.ultima-visita, .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .precio{
+        font-size: 18px;
+        width: 30%;
+    }
+
+    .descuentos{
+        color: #39b54a;
+    }
+
+    .descuento, .descripcion{
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    h3, .descripcion{
+        color: #666;
+    }
+
+    .descripcion{
+        display: none;
+        margin-top: 20px;
+    }
+
+section.banner img{
+    width: 100%;
 }
 
 main{
-    background-position: center;
-    background-size: cover;
-    margin:auto;
     width: 90%;
-}
-   .tarjetas{
-       background-color: white;
-       margin-bottom: 10px;
-
-   }
-   .linea{
-       border-top: solid #ebebeb 1px;
-   }
-   .contenedorDetallesArticulos{
-       
-       margin: 15px;
-    }
-   
-
-.titulares{
-    font-size: 24px;
+    margin: 0 auto;
 }
 
-.camion{
-    color: #39b54a
+main section article{
+    background-color: white;
+    margin: 10px 0px;
+}
 
+main section article img{
+    width: 100%;
 }
-.precios{
-    font-size: 18px;
-    margin-bottom: 0px;
-}
-.descuentos{
-    font-size: 16px;
+
+main section article i, .descuento{
     color: #39b54a;
-    margin-top: 0px
 }
-h4{
+
+main section article i{
+    display: block;
     font-size: 16px;
-    display: none;
-    margin-top: 0px
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
 }
 
 footer{
@@ -120,7 +174,11 @@ footer{
     text-align: center;
     color: #666;
     padding: 10px;
+    font-size: 12px;
 }
+    footer h3{
+        font-size: 20px;
+    }
 
 .logo{
     color: #1259c3;
@@ -129,33 +187,125 @@ footer{
 }
 
 @media (min-width: 361px){
-    h4, .navbar{
+    main section article .descripcion{
         display: block;
     }
-    .tarjetas{
+    main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-
-    .contenedorBurger{
-        display: none;
+    main section div.tarjetas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
     }
     
+    main section div.tarjetas article{
+       width: 45%;
+    }
+    .precio, .descuento{
+        width: 50%;
+    }
+    .buscador{
+        margin: left;
+
+    }
+
 }
+
+
+
 
 @media (min-width: 769px){
-    h4, .navbar{
-        display: block;
-    }
-    .tarjetas{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    .contenedorBurger{
+    div.burger-menu{
         display: none;
     }
+    
+    main section div.tarjetas article{
+        width: 22%;
+    }
+    
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+        nav ul{
+            display: flex;    
+            font-size: 16px;        
+
+        }
+        nav li{
+            margin: 0 8px;
+            
+        }
 
     
+        div.contenedorLogo-cuotas-buscador{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-between;
+        } 
 
+        div.contenedorLogo-cuotas-buscador #cuotas{
+            text-align: right;
+        }
+        
+        div.buscador{
+            display: flex;
+            width: 40%;
+            height: 40px;
+            margin: auto;
+                       
+        }
+        div.logoML{
+            margin-right: 12px;
+        }
 
-    
+        div.buscador input[type=text]{
+        flex: 5 1 auto;
+        }
+    footer{
+        font-size: 15px;
+    }
+
 }
+
+@media (min-width: 1200px){
+    .logoML{
+        width: 250px;
+    }
+    
+    .contenedorLogo-cuotas-buscador, .buscador, nav{
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    nav ul{
+        font-size: 18px;
+    }
+
+    div.buscador{
+        display: flex;
+        width: 40%;
+        height: 40px;
+        margin: auto;
+    }    
+    
+    footer{
+        font-size: 20px;
+    }
+
+   
+
+}
+
+
+
+
+
+    
+
+    
