@@ -134,7 +134,7 @@ main section article img{
     width: 100%;
 }
 
-main section article i, .descuento{
+main section article i{
     color: #39b54a;
 }
 
@@ -186,6 +186,126 @@ footer{
     line-height: 10px;
 }
 
+
+/***************INICIO DEL CSS DE LA PÁGINA DE REGISTRO DE USUARIO********************/
+
+.registerform{
+    padding: 20px 32px 0px;
+    color: #00000073;
+    
+}
+    .controlador-form{
+        margin-bottom: 15px;
+             
+    }
+    .controlador-form label{
+        margin-bottom: 5px;
+        display: block;
+        
+    }   
+        
+    .controlador-form input{
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        
+    }
+  
+    input#fecha{
+        color:#00000073;
+    }      
+
+    .controlador-form button{
+        background-color: #39b54a;
+        border: none;
+        font-size: 20px;
+        color: white;
+        padding: 14px 32px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+h4#perfil{
+    margin-bottom: 10px;
+
+}
+.perfiles{
+    margin-bottom: 10px;
+}   
+    label#harta{
+        margin-left: 5px;
+    }
+
+
+.contenedor-intereses{
+    margin-bottom: 10px;
+}    
+
+    h4#intereses{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }    
+
+    input[type=checkbox]{
+        vertical-align: middle;
+        position: relative;
+        bottom: 1px;
+        
+    }
+    .intereses{
+        display: block;
+    }
+
+ #userPick{
+    margin-top: 5px;
+ }
+   
+
+/*---------------INICIO DEL CSS DE LA PÁGINA DE LOGIN----------------------------*/
+
+
+.login-form{
+    padding: 20px 32px 0px;
+    color: #00000073;
+
+}
+    .control-login-form{
+        margin-bottom: 15px;
+
+    }
+
+    .control-login-form label{
+        margin-bottom: 5px;
+        display: block;
+        
+    }
+   
+        
+    .control-login-form input{
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+    }
+   
+
+    .control-login-form button{
+        background-color: #39b54a;
+        border: none;
+        font-size: 20px;
+        color: white;
+        padding: 14px 32px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+
+
+
+
+
+
 @media (min-width: 361px){
     main section article .descripcion{
         display: block;
@@ -198,7 +318,7 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: flex-start;
+        
     }
     
     main section div.tarjetas article{
@@ -211,6 +331,8 @@ footer{
         margin: left;
 
     }
+
+   /*INICIO DEL CSS DE LA PÁGINA DE REGISTRO DE USUARIO*/
 
 }
 
@@ -270,7 +392,7 @@ footer{
     footer{
         font-size: 15px;
     }
-
+/*INICIO DEL CSS DE LA PÁGINA DE REGISTRO DE USUARIO*/
 }
 
 @media (min-width: 1200px){
@@ -298,7 +420,7 @@ footer{
         font-size: 20px;
     }
 
-   
+   /*INICIO DEL CSS DE LA PÁGINA DE REGISTRO DE USUARIO*/
 
 }
 
