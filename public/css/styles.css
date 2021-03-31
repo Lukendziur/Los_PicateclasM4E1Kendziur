@@ -13,25 +13,25 @@ body {
     }
     
     header{
-        background-color: #EAC926;    
+        background-color: #EAC926;  
+        padding: 20px;  
+        position: fixed;
+        width: 100%;
+        top: 0;     
+        z-index: 100;   
     }
 
-    div.contenedorLogo-cuotas-buscador{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2%;
-        
-        
-    }
-    div.logoML img{
-        width: 200px;
-        
-    }
-    div.buscador{
-        display: flex;
-        
-        
-    }
+        div.contenedorLogo-cuotas-buscador{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2%;
+        }
+            div.logoML img{
+                width: 200px;
+            }
+            div.buscador{
+                display: flex;               
+            }
 
     
     header div.logoML, header div.buscador{
@@ -72,6 +72,16 @@ body {
         width: 10%;
     }
 
+    div.buscador input[type=text]{
+        border-radius: 5px;
+        border: none;
+    }
+    div.buscador button[type=submit]{
+        border-radius: 5px;
+        border: none;
+    }
+   
+
     div.burger-menu{
         text-align: center;
         
@@ -87,6 +97,8 @@ body {
         padding: 10px;
         width: 40px;
     }
+
+
 
 .ultima-visita, .ofertas{
     display: flex;
@@ -112,12 +124,17 @@ body {
     }
 
     .descripcion{
-        display: none;
+        opacity: 0;
         margin-top: 20px;
+        transition: opacity 1s;
     }
+        .descripcion:hover{
+            opacity: 1;
+        }
 
 section.banner img{
     width: 100%;
+    margin-top: 240px
 }
 
 main{
@@ -173,23 +190,40 @@ footer{
     background-position: center;
     text-align: center;
     color: #666;
-    padding: 10px;
+    padding: 25px;
     font-size: 12px;
+    
 }
     footer h3{
         font-size: 20px;
     }
-
+    .articuloWidth{
+        margin: 25px 15px;
+    }
 .logo{
     color: #1259c3;
     font-size: 2em;
     line-height: 10px;
+    transition: color 350ms;
 }
+    .logo:hover{
+        color:#39b54a;
+    }
 
 
 /***************INICIO DEL CSS DE LA PÁGINA DE REGISTRO DE USUARIO********************/
 
-.registerform{
+
+
+
+
+
+.formularioR{
+    margin-top: 250px;
+}
+
+
+.registroh1, .registerform{
     padding: 20px 32px 0px;
     color: #00000073;
     
@@ -216,14 +250,20 @@ footer{
         color:#00000073;
     }      
 
-    .controlador-form button{
-        background-color: #39b54a;
+  
+.contenedorBotones{
+    margin-bottom: 5%;
+}
+    .contenedorBotones button{
+        background-color: #4bb459;
         border: none;
         font-size: 20px;
         color: white;
         padding: 14px 32px;
         border-radius: 5px;
         width: 100%;
+        margin-top: 5%;
+        
     }
 
 h4#perfil{
@@ -251,7 +291,7 @@ h4#perfil{
         vertical-align: middle;
         position: relative;
         bottom: 1px;
-        
+        margin: 10px;
     }
     .intereses{
         display: block;
@@ -264,8 +304,11 @@ h4#perfil{
 
 /*---------------INICIO DEL CSS DE LA PÁGINA DE LOGIN----------------------------*/
 
+.login-main{
+    margin-top: 260px;
 
-.login-form{
+}
+.login-form, .inicioS{
     padding: 20px 32px 0px;
     color: #00000073;
 
@@ -290,27 +333,31 @@ h4#perfil{
     }
    
 
-    .control-login-form button{
+    .control-login-formBut button{
         background-color: #39b54a;
         border: none;
         font-size: 20px;
         color: white;
         padding: 14px 32px;
         border-radius: 5px;
-        width: 100%;
+        width: 100%;        
+        transition: background-color 450ms;
+        margin-bottom: 5%;
+        
     }
 
+    .control-login-formBut button:hover{
+        background-color: #0022AA;
 
-
-
-
+    }
 
 
 @media (min-width: 361px){
-    main section article .descripcion{
-        display: block;
-    }
+   
     main section article{
+        transition: box-shadow 450ms;
+    }
+    main section article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     main section div.tarjetas{
@@ -321,9 +368,7 @@ h4#perfil{
         
     }
     
-    main section div.tarjetas article{
-       width: 45%;
-    }
+    /*tarjetas*/
     .precio, .descuento{
         width: 50%;
     }
@@ -340,12 +385,17 @@ h4#perfil{
 
 
 @media (min-width: 769px){
+    section.banner img{
+        margin-top: 180px;
+    }
+
+  
     div.burger-menu{
         display: none;
     }
     
     main section div.tarjetas article{
-        width: 22%;
+        width: 45%;
     }
     
     header nav{
@@ -355,7 +405,7 @@ h4#perfil{
     }
         nav ul{
             display: flex;    
-            font-size: 16px;        
+            font-size: 14px;        
 
         }
         nav li{
@@ -390,12 +440,81 @@ h4#perfil{
         flex: 5 1 auto;
         }
     footer{
-        font-size: 15px;
+        font-size: 12px;
+        
     }
+        footer h3 {
+          font-size: 16px;
+        }
+
+        .parrafosfooter{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
 /*INICIO DEL CSS DE LA PÁGINA DE REGISTRO DE USUARIO*/
+.controlador-form input{
+    width: 80%;
+}
+.controlador-form button{
+    width: 30%;
+}
+
+.formularioR{
+    margin-top: 220px;
+}
+
+.contenedorBotones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+    .contenedorBotones button{
+        background-color: #4bb459;
+        border: none;
+        font-size: 20px;
+        color: white;
+        padding: 14px 32px;
+        border-radius: 5px;
+        margin-right: 15px;
+        transition: background-color 450ms;
+        width: auto;
+        margin-top: auto;
+    }
+        .contenedorBotones button:hover{
+            background-color: #0022AA;
+        }
+
+/*INICIO DEL CSS DE LA PÁGINA DE LOGIN*/
+
+.login-main {
+    margin-top: 210px;
+}
+.login-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.control-login-form input{
+    width: 80%;
+    
+    height:50px;
+}
+
+.control-login-formBut{
+    max-width: 164px;
+}
+
 }
 
 @media (min-width: 1200px){
+  
+    section.banner img{
+        margin-top: 180px;
+    }
+
     .logoML{
         width: 250px;
     }
@@ -417,10 +536,30 @@ h4#perfil{
     }    
     
     footer{
-        font-size: 20px;
+        font-size: 14px;
+
+    }
+        .articuloWidth{
+            width: 30%;
+
+        }
+
+    main section div.tarjetas article{
+        width: 22%;
     }
 
+
    /*INICIO DEL CSS DE LA PÁGINA DE REGISTRO DE USUARIO*/
+
+   .controlador-form input{
+    width: 70%;
+   }
+
+   /*INICIO DEL CSS DE LA PÁGINA DE LOIN*/
+   .control-login-form input{
+    width: 50%;
+    height:50px;
+}
 
 }
 

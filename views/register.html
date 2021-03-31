@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
        
+    
     <title>Registro de Usuario</title>
 </head>
 <body>
@@ -48,10 +49,15 @@
     </header>
 
     <main class="formularioR">
+
+
+            <h1 class="registroh1">Registro</h1>
     
         <!-- FORMULARIO -->
 
         <form action="/crear-usuario" method="POST" class="registerform">
+            
+            
             <div class="controlador-form">
                 <label for="nombre">Nombre y apellido</label>
                 <input type="text" name="nombre" id="nombre" required>
@@ -117,30 +123,64 @@
                 <label for="confir-contraseña">Confirmar contraseña</label>
                 <input type="password" name="password" minlength="6" maxlength="15" id="confir-contraseña" required>
             </div>
-           <div class="controlador-form"> 
+           <!--
+            <div class="controlador-form"> 
             <button type ="reset" class="button">Borrar</button>
           </div>
+        
           <div class="controlador-form"> 
             <button type ="submit">Enviar</button>
-          </div>
-            
-     
-         
+          </div>--->
+           
+          <div class="contenedorBotones">
+            <button type ="reset">Borrar</button>
+            <button type ="submit">Registrarse</button>
+         </div>
         
         </form>
 
     </main>
-<!--
-    <br>
-    <label class="intereses">
-    <input type="checkbox" name="intereses" value="Electro">
-     Esto funciona 
-   </label>
-   <label class="intereses">
-    <input type="checkbox" name="intereses" value="Electro">
-     Esto también 
-   </label>
-    <br>-->
-</body>
 
+</body>
+<footer>
+    
+<aside class="parrafosfooter">
+<section class="articuloWidth">
+<article>
+    <div class= "logo"> <i class="fas fa-credit-card"></i></div>
+    <h3>Pagá con tarjeta o en efectivo</h3>
+    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+</article>
+</section>
+
+   
+
+<section  class="articuloWidth">
+<article>
+    <div class= "logo"> <i class="fas fa-gift"></i> </div>
+    <h3>Envío gratis desde $2.500</h3>
+    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+</article>
+</section>
+
+  
+
+<section  class="articuloWidth">
+<article>
+   <div class= "logo"><i class="fas fa-user-shield"></i></div>
+   <h3>Seguridad, de principio a fin</h3>
+   <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+</article>
+</section>
+</aside>
+    
+
+
+
+<section>
+<article>
+    <h5>Copyright © 1999-2021 MercadoLiebre S.R.L.</h5>
+</article>
+</section>
+</footer>
 </html>
