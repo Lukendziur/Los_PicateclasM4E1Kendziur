@@ -56,7 +56,14 @@ body {
         display: inline-block;
         
     }
+    .buscador{
+        display: flex;
+    }
 
+    .miF{
+        width: 100%;
+        display: flow-root;
+    }
     header .buscador .text{
         background-color: #FFF;
         border: 1px solid #000;
@@ -75,12 +82,22 @@ body {
     div.buscador input[type=text]{
         border-radius: 5px;
         border: none;
+        padding: 10px;
+        width: 100%;
     }
     div.buscador button[type=submit]{
-        border-radius: 5px;
-        border: none;
+        background-color: #ffffff;
+        border: 0;
+        position: absolute;
+        top: 41%;
+        transform: translate(-110%, -50%);
+        padding: 0 0px 0 5px;
     }
-   
+    .fa-search::before {
+        content: "\f002";
+        font-size: 20px;
+        color:#666        
+    }
 
     div.burger-menu{
         text-align: center;
@@ -431,6 +448,11 @@ h4#perfil{
             height: 40px;
             margin: auto;
                        
+        }
+        div.buscador button[type=submit]{
+            
+            top: 39%;
+            
         }
         div.logoML{
             margin-right: 12px;
